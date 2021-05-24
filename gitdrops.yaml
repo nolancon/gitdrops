@@ -11,7 +11,7 @@ privileges:
   #  backups: false
   #  ipv6: false
   #  volumes: ["volume-1"]
-  #  sshKeyFingerprints: ["XX.XX.XX.XX..."]
+  #  sshKeyFingerprints: ["3e:a2:6d:19:1c:de:01:f4:48:4f:0c:99:39:eb:56:fb"]
   #  userData:
   #    path: cloudconfig
   #volumes:
