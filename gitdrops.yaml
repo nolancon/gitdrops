@@ -1,19 +1,20 @@
 privileges:
-  create: false
+  create: true
   update: false
   # warning: enabling delete privileges will remove all droplets and volumes not listed in this file
   delete: false 
-  #droplets:
-  #- name: centos-droplet-1
-  #  region: nyc3
-  #  size: s-1vcpu-1gb
-  #  image: centos-8-x64         
-  #  backups: false
-  #  ipv6: false
-  #  volumes: ["volume-1"]
-  #  sshKeyFingerprints: ["3e:a2:6d:19:1c:de:01:f4:48:4f:0c:99:39:eb:56:fb"]
-  #  userData:
-  #    path: cloudconfig
+droplets:
+- name: conor-k8s-dev
+  region: lon1
+  # size options: s-1vcpu-1gb, s-2vcpu-4gb, s-4vcpu-8gb, s-6vcpu-16gb, s-4vcpu-8gb-amd, s-8vcpu-16gb-amd 
+  size: s-4vcpu-8gb-amd
+  image: centos-8-x64         
+  backups: false
+  ipv6: false
+  #  volumes: [""]
+  sshKeyFingerprints: ["1f:41:5c:c0:26:0b:bc:36:8b:0b:04:80:7e:ef:b0:85"]
+  userData:
+    path: cloudconfig
   #volumes:
   #- name: volume-1
   #  region: nyc3
