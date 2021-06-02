@@ -8,7 +8,7 @@ droplets:
   region: lon1
   # size options: s-1vcpu-1gb, s-2vcpu-4gb, s-4vcpu-8gb, s-6vcpu-16gb, s-4vcpu-8gb-amd, s-8vcpu-16gb-amd 
   size: s-4vcpu-8gb-amd
-  image: ubuntu-21-04-x64
+  image: ubuntu-18-04-x64
   backups: false
   ipv6: false
   #  volumes: [""]
