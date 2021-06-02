@@ -1,9 +1,10 @@
 #cloud-config
 
 runcmd:
-  - [yum, install, -y, git, make]
+  - [apt, install, -y, git, make]
   - [mkdir, /root/git-tmp] 
   - [cd, /root/git-tmp]
   - [git, clone, "https://github.com/nolancon/go-dev-env"]
   - [cd, go-dev-env]
+  - [git, checkout, ubuntu]
   - [make, local]
