@@ -1,24 +1,24 @@
-name: GitDrops Scheduled Commit 
+#name: GitDrops Scheduled Commit 
 
-on:
+#on:
 # 7am (UTC) Mon-Fri
-  schedule:
-    - cron: "0 7 * * 1,2,3,4,5"
+#  schedule:
+#    - cron: "0 7 * * 1,2,3,4,5"
 
-jobs:
-  gitdrops-update:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-      with:
-        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+#jobs:
+#  gitdrops-update:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/checkout@v2
+#      with:
+#        persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+#        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
 
-    - name: Create local changes and commit
-      run: ./commit.sh 
+#    - name: Create local changes and commit
+#      run: ./commit.sh 
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+#    - name: Push changes
+#      uses: ad-m/github-push-action@master
+#      with:
+#        github_token: ${{ secrets.GITHUB_TOKEN }}
+#        branch: ${{ github.ref }}
