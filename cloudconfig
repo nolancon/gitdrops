@@ -1,6 +1,7 @@
 #cloud-config
 
 runcmd:
+  - [apt, update]
   - [apt, install, -y, git, make]
   - [mkdir, /root/git-tmp] 
   - [cd, /root/git-tmp]
