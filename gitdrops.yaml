@@ -16,15 +16,15 @@ droplets:
   sshKeyFingerprints: ["1f:41:5c:c0:26:0b:bc:36:8b:0b:04:80:7e:ef:b0:85"]
   userData:
     path: cloudconfig
-- name: conor-k8s-dev-22-10
+- name: conor-k8s-dev-20-04
   region: lon1
   # size options: s-1vcpu-1gb, s-2vcpu-4gb, s-4vcpu-8gb, s-6vcpu-16gb, s-4vcpu-8gb-amd, s-8vcpu-16gb-amd 
   size: s-4vcpu-8gb-amd
-  image: ubuntu-22-10-x64
+  image: ubuntu-20-04-x64
   backups: false
   ipv6: false
   #  volumes: [""]
-  tags: ["conor", "k8s-dev-22-10"]
+  tags: ["conor", "k8s-dev-20-04"]
   sshKeyFingerprints: ["1f:41:5c:c0:26:0b:bc:36:8b:0b:04:80:7e:ef:b0:85"]
   userData:
     path: cloudconfig
